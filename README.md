@@ -15,7 +15,7 @@ var detect = require('feature-detect-es6')
 if (detect.class() && detect.arrowFunction()){
   // safe to run ES6 code natively..
 } else {
-  // run your transpiled ES5.. 
+  // run your transpiled ES5..
 }
 ```
 
@@ -24,6 +24,7 @@ if (detect.class() && detect.arrowFunction()){
   * [.arrowFunction()](#module_feature-detect-es6.arrowFunction) ⇒ <code>boolean</code>
   * [.let()](#module_feature-detect-es6.let) ⇒ <code>boolean</code>
   * [.const()](#module_feature-detect-es6.const) ⇒ <code>boolean</code>
+  * [.newArrayFeatures()](#module_feature-detect-es6.newArrayFeatures) ⇒ <code>boolean</code>
 
 <a name="module_feature-detect-es6.class"></a>
 ### detect.class() ⇒ <code>boolean</code>
@@ -43,6 +44,11 @@ Returns true if the `let` statement is available.
 <a name="module_feature-detect-es6.const"></a>
 ### detect.const() ⇒ <code>boolean</code>
 Returns true if the `const` statement is available.
+
+**Kind**: static method of <code>[feature-detect-es6](#module_feature-detect-es6)</code>  
+<a name="module_feature-detect-es6.newArrayFeatures"></a>
+### detect.newArrayFeatures() ⇒ <code>boolean</code>
+Returns true if the [new Array features](http://exploringjs.com/es6/ch_arrays.html) are available (exluding `Array.prototype.values` which has zero support anywhere).
 
 **Kind**: static method of <code>[feature-detect-es6](#module_feature-detect-es6)</code>  
 
