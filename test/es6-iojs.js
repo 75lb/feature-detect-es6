@@ -22,6 +22,6 @@ test('.const()', function (t) {
 })
 
 test('.newArrayFeatures()', function (t) {
-  t.strictEqual(detect.newArrayFeatures(), true)
+  t.strictEqual(detect.newArrayFeatures(), false)
   t.end()
 })
