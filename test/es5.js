@@ -20,3 +20,8 @@ test('.const()', function (t) {
   t.strictEqual(detect.const(), false)
   t.end()
 })
+
+test('.newArrayFeatures()', function (t) {
+  t.strictEqual(detect.newArrayFeatures(), false)
+  t.end()
+})
