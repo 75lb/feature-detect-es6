@@ -1,7 +1,7 @@
 {
   "name": "feature-detect-es6",
   "author": "Lloyd Brookes <75pound@gmail.com>",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Detect which ES6 features are available.",
   "repository": "https://github.com/75lb/feature-detect-es6.git",
   "license": "MIT",
