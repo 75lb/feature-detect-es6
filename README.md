@@ -12,6 +12,8 @@ Detect which ES6 features are available.
 * [feature-detect-es6](#module_feature-detect-es6)
   * [.class()](#module_feature-detect-es6.class) ⇒ <code>boolean</code>
   * [.arrowFunction()](#module_feature-detect-es6.arrowFunction) ⇒ <code>boolean</code>
+  * [.let()](#module_feature-detect-es6.let) ⇒ <code>boolean</code>
+  * [.const()](#module_feature-detect-es6.const) ⇒ <code>boolean</code>
 
 <a name="module_feature-detect-es6.class"></a>
 ### detect.class() ⇒ <code>boolean</code>
@@ -21,6 +23,16 @@ Returns true if the `class` statement is available.
 <a name="module_feature-detect-es6.arrowFunction"></a>
 ### detect.arrowFunction() ⇒ <code>boolean</code>
 Returns true if the arrow functions available.
+
+**Kind**: static method of <code>[feature-detect-es6](#module_feature-detect-es6)</code>  
+<a name="module_feature-detect-es6.let"></a>
+### detect.let() ⇒ <code>boolean</code>
+Returns true if the `let` statement is available.
+
+**Kind**: static method of <code>[feature-detect-es6](#module_feature-detect-es6)</code>  
+<a name="module_feature-detect-es6.const"></a>
+### detect.const() ⇒ <code>boolean</code>
+Returns true if the `const` statement is available.
 
 **Kind**: static method of <code>[feature-detect-es6](#module_feature-detect-es6)</code>  
 
