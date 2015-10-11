@@ -1,0 +1,27 @@
+{
+  "name": "feature-detect-es6",
+  "author": "Lloyd Brookes <75pound@gmail.com>",
+  "version": "0.0.0",
+  "description": "Detect which ES6 features are available.",
+  "repository": "https://github.com/75lb/feature-detect-es6.git",
+  "license": "MIT",
+  "main": "./lib/feature-detect-es6.js",
+  "keywords": [
+    "detect",
+    "es6",
+    "feature",
+    "class",
+    "arrow function"
+  ],
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "tape test/*.js",
+    "docs": "jsdoc2md -t jsdoc2md/README.hbs lib/*.js > README.md; echo"
+  },
+  "devDependencies": {
+    "jsdoc-to-markdown": "^1.2.0",
+    "tape": "^4.2.1"
+  }
+}
