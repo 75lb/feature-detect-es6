@@ -8,6 +8,16 @@
 ## feature-detect-es6
 Detect which ES6 features are available.
 
+**Example**  
+```js
+var detect = require('feature-detect-es6')
+
+if (detect.class() && detect.arrowFunction()){
+  // safe to run ES6 code natively..
+} else {
+  // run your transpiled ES5.. 
+}
+```
 
 * [feature-detect-es6](#module_feature-detect-es6)
   * [.class()](#module_feature-detect-es6.class) ⇒ <code>boolean</code>
