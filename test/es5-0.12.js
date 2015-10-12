@@ -40,3 +40,13 @@ test('.promises()', function (t) {
   t.strictEqual(detect.generators(), false)
   t.end()
 })
+
+test('.templateStrings()', function (t) {
+  t.strictEqual(detect.templateStrings(), false)
+  t.end()
+})
+
+test('.symbols()', function (t) {
+  t.strictEqual(detect.symbols(), false)
+  t.end()
+})

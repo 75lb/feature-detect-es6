@@ -27,6 +27,9 @@ if (detect.class() && detect.arrowFunction()){
   * [.newArrayFeatures()](#module_feature-detect-es6.newArrayFeatures) ⇒ <code>boolean</code>
   * [.collections()](#module_feature-detect-es6.collections) ⇒ <code>boolean</code>
   * [.generators()](#module_feature-detect-es6.generators) ⇒ <code>boolean</code>
+  * [.promises()](#module_feature-detect-es6.promises) ⇒ <code>boolean</code>
+  * [.templateStrings()](#module_feature-detect-es6.templateStrings) ⇒ <code>boolean</code>
+  * [.symbols()](#module_feature-detect-es6.symbols) ⇒ <code>boolean</code>
 
 <a name="module_feature-detect-es6.class"></a>
 ### detect.class() ⇒ <code>boolean</code>
@@ -61,6 +64,21 @@ Returns true if `Map`, `WeakMap`, `Set` and `WeakSet` are available.
 <a name="module_feature-detect-es6.generators"></a>
 ### detect.generators() ⇒ <code>boolean</code>
 Returns true if generators are available.
+
+**Kind**: static method of <code>[feature-detect-es6](#module_feature-detect-es6)</code>  
+<a name="module_feature-detect-es6.promises"></a>
+### detect.promises() ⇒ <code>boolean</code>
+Returns true if `Promise` is available.
+
+**Kind**: static method of <code>[feature-detect-es6](#module_feature-detect-es6)</code>  
+<a name="module_feature-detect-es6.templateStrings"></a>
+### detect.templateStrings() ⇒ <code>boolean</code>
+Returns true if template strings are available.
+
+**Kind**: static method of <code>[feature-detect-es6](#module_feature-detect-es6)</code>  
+<a name="module_feature-detect-es6.symbols"></a>
+### detect.symbols() ⇒ <code>boolean</code>
+Returns true if `Symbol` is available.
 
 **Kind**: static method of <code>[feature-detect-es6](#module_feature-detect-es6)</code>  
 
