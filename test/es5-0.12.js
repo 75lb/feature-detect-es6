@@ -47,6 +47,6 @@ test('.templateStrings()', function (t) {
 })
 
 test('.symbols()', function (t) {
-  t.strictEqual(detect.symbols(), false)
+  t.strictEqual(detect.symbols(), true)
   t.end()
 })
