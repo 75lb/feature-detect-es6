@@ -35,3 +35,8 @@ test('.generators()', function (t) {
   t.strictEqual(detect.generators(), false)
   t.end()
 })
+
+test('.promises()', function (t) {
+  t.strictEqual(detect.generators(), false)
+  t.end()
+})

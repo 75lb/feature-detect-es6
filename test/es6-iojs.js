@@ -32,6 +32,11 @@ test('.collections()', function (t) {
 })
 
 test('.generators()', function (t) {
-  t.strictEqual(detect.generators(), false)
+  t.strictEqual(detect.generators(), true)
+  t.end()
+})
+
+test('.promises()', function (t) {
+  t.strictEqual(detect.generators(), true)
   t.end()
 })
