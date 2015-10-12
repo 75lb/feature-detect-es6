@@ -42,11 +42,11 @@ test('.promises()', function (t) {
 })
 
 test('.templateStrings()', function (t) {
-  t.strictEqual(detect.templateStrings(), false)
+  t.strictEqual(detect.templateStrings(), true)
   t.end()
 })
 
 test('.symbols()', function (t) {
-  t.strictEqual(detect.symbols(), false)
+  t.strictEqual(detect.symbols(), true)
   t.end()
 })
