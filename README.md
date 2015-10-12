@@ -25,6 +25,8 @@ if (detect.class() && detect.arrowFunction()){
   * [.let()](#module_feature-detect-es6.let) ⇒ <code>boolean</code>
   * [.const()](#module_feature-detect-es6.const) ⇒ <code>boolean</code>
   * [.newArrayFeatures()](#module_feature-detect-es6.newArrayFeatures) ⇒ <code>boolean</code>
+  * [.collections()](#module_feature-detect-es6.collections) ⇒ <code>boolean</code>
+  * [.generators()](#module_feature-detect-es6.generators) ⇒ <code>boolean</code>
 
 <a name="module_feature-detect-es6.class"></a>
 ### detect.class() ⇒ <code>boolean</code>
@@ -49,6 +51,16 @@ Returns true if the `const` statement is available.
 <a name="module_feature-detect-es6.newArrayFeatures"></a>
 ### detect.newArrayFeatures() ⇒ <code>boolean</code>
 Returns true if the [new Array features](http://exploringjs.com/es6/ch_arrays.html) are available (exluding `Array.prototype.values` which has zero support anywhere).
+
+**Kind**: static method of <code>[feature-detect-es6](#module_feature-detect-es6)</code>  
+<a name="module_feature-detect-es6.collections"></a>
+### detect.collections() ⇒ <code>boolean</code>
+Returns true if `Map`, `WeakMap`, `Set` and `WeakSet` are available.
+
+**Kind**: static method of <code>[feature-detect-es6](#module_feature-detect-es6)</code>  
+<a name="module_feature-detect-es6.generators"></a>
+### detect.generators() ⇒ <code>boolean</code>
+Returns true if generators are available.
 
 **Kind**: static method of <code>[feature-detect-es6](#module_feature-detect-es6)</code>  
 

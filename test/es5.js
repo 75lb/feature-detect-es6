@@ -25,3 +25,13 @@ test('.newArrayFeatures()', function (t) {
   t.strictEqual(detect.newArrayFeatures(), false)
   t.end()
 })
+
+test('.collections()', function (t) {
+  t.strictEqual(detect.collections(), false)
+  t.end()
+})
+
+test('.generators()', function (t) {
+  t.strictEqual(detect.generators(), false)
+  t.end()
+})
