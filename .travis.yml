@@ -1,8 +1,10 @@
 language: node_js
 matrix:
   include:
-    - node_js: "node"
-      env: VERSION=node
+    - node_js: "5.0"
+      env: VERSION=5.0
+    - node_js: "4.1"
+      env: VERSION=4.1
     - node_js: "iojs"
       env: VERSION=iojs
     - node_js: "0.12"

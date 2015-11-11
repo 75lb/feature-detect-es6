@@ -7,7 +7,7 @@ test('.class()', function (t) {
 })
 
 test('.arrowFunction()', function (t) {
-  t.strictEqual(detect.arrowFunction(), false)
+  t.strictEqual(detect.arrowFunction(), true)
   t.end()
 })
 
@@ -22,7 +22,7 @@ test('.const()', function (t) {
 })
 
 test('.newArrayFeatures()', function (t) {
-  t.strictEqual(detect.newArrayFeatures(), false)
+  t.strictEqual(detect.newArrayFeatures(), true)
   t.end()
 })
 
@@ -57,6 +57,6 @@ test('.destructuring', function (t) {
 })
 
 test('.spread', function (t) {
-  t.strictEqual(detect.spread(), false)
+  t.strictEqual(detect.spread(), true)
   t.end()
 })

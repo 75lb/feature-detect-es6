@@ -30,6 +30,8 @@ if (detect.class() && detect.arrowFunction()){
   * [.promises()](#module_feature-detect-es6.promises) ⇒ <code>boolean</code>
   * [.templateStrings()](#module_feature-detect-es6.templateStrings) ⇒ <code>boolean</code>
   * [.symbols()](#module_feature-detect-es6.symbols) ⇒ <code>boolean</code>
+  * [.destructuring()](#module_feature-detect-es6.destructuring) ⇒ <code>boolean</code>
+  * [.spread()](#module_feature-detect-es6.spread) ⇒ <code>boolean</code>
 
 <a name="module_feature-detect-es6.class"></a>
 ### detect.class() ⇒ <code>boolean</code>
@@ -79,6 +81,16 @@ Returns true if template strings are available.
 <a name="module_feature-detect-es6.symbols"></a>
 ### detect.symbols() ⇒ <code>boolean</code>
 Returns true if `Symbol` is available.
+
+**Kind**: static method of <code>[feature-detect-es6](#module_feature-detect-es6)</code>  
+<a name="module_feature-detect-es6.destructuring"></a>
+### detect.destructuring() ⇒ <code>boolean</code>
+Returns true if destructuring is available.
+
+**Kind**: static method of <code>[feature-detect-es6](#module_feature-detect-es6)</code>  
+<a name="module_feature-detect-es6.spread"></a>
+### detect.spread() ⇒ <code>boolean</code>
+Returns true if the spread operator (`...`) is available.
 
 **Kind**: static method of <code>[feature-detect-es6](#module_feature-detect-es6)</code>  
 

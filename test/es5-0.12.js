@@ -50,3 +50,13 @@ test('.symbols()', function (t) {
   t.strictEqual(detect.symbols(), true)
   t.end()
 })
+
+test('.destructuring', function (t) {
+  t.strictEqual(detect.destructuring(), false)
+  t.end()
+})
+
+test('.spread', function (t) {
+  t.strictEqual(detect.spread(), false)
+  t.end()
+})
