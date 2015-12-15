@@ -12,7 +12,7 @@ Detect which ES6 features are available.
 ```js
 var detect = require('feature-detect-es6')
 
-if (detect.class() && detect.arrowFunction()){
+if (detect.all('class', 'spread', 'let', 'arrowFunction')){
   // safe to run ES6 code natively..
 } else {
   // run your transpiled ES5..
@@ -20,18 +20,19 @@ if (detect.class() && detect.arrowFunction()){
 ```
 
 * [feature-detect-es6](#module_feature-detect-es6)
-  * [.class()](#module_feature-detect-es6.class) ⇒ <code>boolean</code>
-  * [.arrowFunction()](#module_feature-detect-es6.arrowFunction) ⇒ <code>boolean</code>
-  * [.let()](#module_feature-detect-es6.let) ⇒ <code>boolean</code>
-  * [.const()](#module_feature-detect-es6.const) ⇒ <code>boolean</code>
-  * [.newArrayFeatures()](#module_feature-detect-es6.newArrayFeatures) ⇒ <code>boolean</code>
-  * [.collections()](#module_feature-detect-es6.collections) ⇒ <code>boolean</code>
-  * [.generators()](#module_feature-detect-es6.generators) ⇒ <code>boolean</code>
-  * [.promises()](#module_feature-detect-es6.promises) ⇒ <code>boolean</code>
-  * [.templateStrings()](#module_feature-detect-es6.templateStrings) ⇒ <code>boolean</code>
-  * [.symbols()](#module_feature-detect-es6.symbols) ⇒ <code>boolean</code>
-  * [.destructuring()](#module_feature-detect-es6.destructuring) ⇒ <code>boolean</code>
-  * [.spread()](#module_feature-detect-es6.spread) ⇒ <code>boolean</code>
+    * [.class()](#module_feature-detect-es6.class) ⇒ <code>boolean</code>
+    * [.arrowFunction()](#module_feature-detect-es6.arrowFunction) ⇒ <code>boolean</code>
+    * [.let()](#module_feature-detect-es6.let) ⇒ <code>boolean</code>
+    * [.const()](#module_feature-detect-es6.const) ⇒ <code>boolean</code>
+    * [.newArrayFeatures()](#module_feature-detect-es6.newArrayFeatures) ⇒ <code>boolean</code>
+    * [.collections()](#module_feature-detect-es6.collections) ⇒ <code>boolean</code>
+    * [.generators()](#module_feature-detect-es6.generators) ⇒ <code>boolean</code>
+    * [.promises()](#module_feature-detect-es6.promises) ⇒ <code>boolean</code>
+    * [.templateStrings()](#module_feature-detect-es6.templateStrings) ⇒ <code>boolean</code>
+    * [.symbols()](#module_feature-detect-es6.symbols) ⇒ <code>boolean</code>
+    * [.destructuring()](#module_feature-detect-es6.destructuring) ⇒ <code>boolean</code>
+    * [.spread()](#module_feature-detect-es6.spread) ⇒ <code>boolean</code>
+    * [.all()](#module_feature-detect-es6.all) ⇒ <code>boolean</code>
 
 <a name="module_feature-detect-es6.class"></a>
 ### detect.class() ⇒ <code>boolean</code>
@@ -93,6 +94,20 @@ Returns true if destructuring is available.
 Returns true if the spread operator (`...`) is available.
 
 **Kind**: static method of <code>[feature-detect-es6](#module_feature-detect-es6)</code>  
+<a name="module_feature-detect-es6.all"></a>
+### detect.all() ⇒ <code>boolean</code>
+Returns true if *all* specified features are detected.
+
+**Kind**: static method of <code>[feature-detect-es6](#module_feature-detect-es6)</code>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| [...feature] | <code>string</code> | the features to detect. |
+
+**Example**  
+```js
+var result = detect.all('class', 'spread', 'let', 'arrowFunction')
+```
 
 * * *
 

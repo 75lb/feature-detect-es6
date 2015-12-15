@@ -60,3 +60,8 @@ test('.spread', function (t) {
   t.strictEqual(detect.spread(), false)
   t.end()
 })
+
+test('.all(tests)', function (t) {
+  t.strictEqual(detect.all('class', 'spread', 'let'), false)
+  t.end()
+})
