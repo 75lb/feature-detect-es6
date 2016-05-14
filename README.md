@@ -33,6 +33,7 @@ if (detect.all('class', 'spread', 'let', 'arrowFunction')){
     * [.symbols()](#module_feature-detect-es6.symbols) ⇒ <code>boolean</code>
     * [.destructuring()](#module_feature-detect-es6.destructuring) ⇒ <code>boolean</code>
     * [.spread()](#module_feature-detect-es6.spread) ⇒ <code>boolean</code>
+    * [.defaultParamValues()](#module_feature-detect-es6.defaultParamValues) ⇒ <code>boolean</code>
     * [.all()](#module_feature-detect-es6.all) ⇒ <code>boolean</code>
 
 <a name="module_feature-detect-es6.class"></a>
@@ -105,6 +106,12 @@ Returns true if destructuring is available.
 
 ### detect.spread() ⇒ <code>boolean</code>
 Returns true if the spread operator (`...`) is available.
+
+**Kind**: static method of <code>[feature-detect-es6](#module_feature-detect-es6)</code>  
+<a name="module_feature-detect-es6.defaultParamValues"></a>
+
+### detect.defaultParamValues() ⇒ <code>boolean</code>
+Returns true if default parameter values are available.
 
 **Kind**: static method of <code>[feature-detect-es6](#module_feature-detect-es6)</code>  
 <a name="module_feature-detect-es6.all"></a>

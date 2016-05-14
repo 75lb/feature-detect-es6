@@ -2,7 +2,7 @@
   "name": "feature-detect-es6",
   "author": "Lloyd Brookes <75pound@gmail.com>",
   "version": "1.2.0",
-  "description": "Detect which ES6 features are available.",
+  "description": "Detect which ES6/ES2015 features are available.",
   "repository": "https://github.com/75lb/feature-detect-es6.git",
   "license": "MIT",
   "main": "./lib/feature-detect-es6.js",
@@ -11,7 +11,20 @@
     "es6",
     "feature",
     "class",
-    "arrow function"
+    "arrow function",
+    "let",
+    "array",
+    "Map",
+    "Set",
+    "generator",
+    "promise",
+    "template string",
+    "symbol",
+    "destructuring",
+    "language",
+    "es2015",
+    "spread",
+    "default parameter value"
   ],
   "engines": {
     "node": ">=0.10.0"
