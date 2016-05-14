@@ -7,7 +7,7 @@
 <a name="module_feature-detect-es6"></a>
 
 ## feature-detect-es6
-Detect which ES6 features are available.
+Detect which ES2015 features are available.
 
 **Example**  
 ```js
