@@ -60,3 +60,8 @@ test('.spread', function (t) {
   t.strictEqual(detect.spread(), false)
   t.end()
 })
+
+test('.defaultParamValues', function (t) {
+  t.strictEqual(detect.defaultParamValues(), false)
+  t.end()
+})

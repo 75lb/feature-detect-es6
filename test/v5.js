@@ -65,3 +65,8 @@ test('.all(tests)', function (t) {
   t.strictEqual(detect.all('class', 'spread', 'let'), true)
   t.end()
 })
+
+test('.defaultParamValues', function (t) {
+  t.strictEqual(detect.defaultParamValues(), false)
+  t.end()
+})
