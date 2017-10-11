@@ -26,6 +26,7 @@ if (detect.all('class', 'spread', 'let', 'arrowFunction')){
     * [.let()](#module_feature-detect-es6.let) ⇒ <code>boolean</code>
     * [.const()](#module_feature-detect-es6.const) ⇒ <code>boolean</code>
     * [.newArrayFeatures()](#module_feature-detect-es6.newArrayFeatures) ⇒ <code>boolean</code>
+    * [.newObjectFeatures()](#module_feature-detect-es6.newObjectFeatures) ⇒ <code>boolean</code>
     * [.collections()](#module_feature-detect-es6.collections) ⇒ <code>boolean</code>
     * [.generators()](#module_feature-detect-es6.generators) ⇒ <code>boolean</code>
     * [.promises()](#module_feature-detect-es6.promises) ⇒ <code>boolean</code>
@@ -64,6 +65,12 @@ Returns true if the `const` statement is available.
 
 ### detect.newArrayFeatures() ⇒ <code>boolean</code>
 Returns true if the [new Array features](http://exploringjs.com/es6/ch_arrays.html) are available (exluding `Array.prototype.values` which has zero support anywhere).
+
+**Kind**: static method of <code>[feature-detect-es6](#module_feature-detect-es6)</code>  
+<a name="module_feature-detect-es6.newObjectFeatures"></a>
+
+### detect.newObjectFeatures() ⇒ <code>boolean</code>
+Returns true if the new functions of Object are available.
 
 **Kind**: static method of <code>[feature-detect-es6](#module_feature-detect-es6)</code>  
 <a name="module_feature-detect-es6.collections"></a>

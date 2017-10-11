@@ -26,6 +26,11 @@ test('.newArrayFeatures()', function (t) {
   t.end()
 })
 
+test('.newObjectFeatures()', function (t) {
+  t.strictEqual(detect.newObjectFeatures(), true)
+  t.end()
+})
+
 test('.collections()', function (t) {
   t.strictEqual(detect.collections(), true)
   t.end()
