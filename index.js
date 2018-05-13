@@ -125,7 +125,7 @@ exports.templateStrings = function () {
  * @returns {boolean}
  */
 exports.symbols = function () {
-  return typeof Symbol !== 'undefined'
+  return typeof Symbol !== 'undefined' && typeof Symbol.for === 'function'
 }
 
 /**

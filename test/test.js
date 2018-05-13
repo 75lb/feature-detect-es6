@@ -1,3 +1,4 @@
+/* Travis sets `process.env.VERSION` before running this script */
 switch (process.env.VERSION) {
   case '6':
     console.log('Running v6 tests')

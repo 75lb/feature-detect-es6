@@ -5,7 +5,6 @@
   "description": "Detect which ES2015 features are available.",
   "repository": "https://github.com/75lb/feature-detect-es6.git",
   "license": "MIT",
-  "main": "./lib/feature-detect-es6.js",
   "keywords": [
     "detect",
     "es6",
@@ -30,14 +29,14 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "tape test/*.js",
+    "test": "echo 'Run the appropriate script in test/ for your version of node.'",
     "docs": "jsdoc2md -t jsdoc2md/README.hbs lib/*.js > README.md; echo"
   },
   "devDependencies": {
-    "jsdoc-to-markdown": "^3.0.2",
-    "tape": "^4.8.0"
+    "jsdoc-to-markdown": "^4.0.1",
+    "tape": "^4.9.0"
   },
   "dependencies": {
-    "array-back": "^1.0.3"
+    "array-back": "^1.0.4"
   }
 }
