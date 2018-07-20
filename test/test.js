@@ -1,5 +1,9 @@
 /* Travis sets `process.env.VERSION` before running this script */
 switch (process.env.VERSION) {
+  case '7':
+    console.log('Running v7 tests')
+    require('./v7')
+    break
   case '6':
     console.log('Running v6 tests')
     require('./v6')

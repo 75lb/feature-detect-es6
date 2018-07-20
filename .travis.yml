@@ -2,13 +2,13 @@ language: node_js
 matrix:
   include:
     - node_js: 10
-      env: VERSION=6
+      env: VERSION=7
     - node_js: 9
-      env: VERSION=6
+      env: VERSION=7
     - node_js: 8
-      env: VERSION=6
+      env: VERSION=7
     - node_js: 7
-      env: VERSION=6
+      env: VERSION=7
     - node_js: 6
       env: VERSION=6
     - node_js: 5

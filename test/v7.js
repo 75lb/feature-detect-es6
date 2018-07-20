@@ -2,32 +2,32 @@ var detect = require('../')
 var test = require('tape')
 
 test('.class()', function (t) {
-  t.strictEqual(detect.class(), false)
+  t.strictEqual(detect.class(), true)
   t.end()
 })
 
 test('.arrowFunction()', function (t) {
-  t.strictEqual(detect.arrowFunction(), false)
+  t.strictEqual(detect.arrowFunction(), true)
   t.end()
 })
 
 test('.let()', function (t) {
-  t.strictEqual(detect.let(), false)
+  t.strictEqual(detect.let(), true)
   t.end()
 })
 
 test('.const()', function (t) {
-  t.strictEqual(detect.const(), false)
+  t.strictEqual(detect.const(), true)
   t.end()
 })
 
 test('.newArrayFeatures()', function (t) {
-  t.strictEqual(detect.newArrayFeatures(), false)
+  t.strictEqual(detect.newArrayFeatures(), true)
   t.end()
 })
 
 test('.newObjectFeatures()', function (t) {
-  t.strictEqual(detect.newObjectFeatures(), false)
+  t.strictEqual(detect.newObjectFeatures(), true)
   t.end()
 })
 
@@ -37,17 +37,17 @@ test('.collections()', function (t) {
 })
 
 test('.generators()', function (t) {
-  t.strictEqual(detect.generators(), false)
+  t.strictEqual(detect.generators(), true)
   t.end()
 })
 
 test('.promises()', function (t) {
-  t.strictEqual(detect.generators(), false)
+  t.strictEqual(detect.generators(), true)
   t.end()
 })
 
 test('.templateStrings()', function (t) {
-  t.strictEqual(detect.templateStrings(), false)
+  t.strictEqual(detect.templateStrings(), true)
   t.end()
 })
 
@@ -57,21 +57,26 @@ test('.symbols()', function (t) {
 })
 
 test('.destructuring', function (t) {
-  t.strictEqual(detect.destructuring(), false)
+  t.strictEqual(detect.destructuring(), true)
   t.end()
 })
 
 test('.spread', function (t) {
-  t.strictEqual(detect.spread(), false)
+  t.strictEqual(detect.spread(), true)
+  t.end()
+})
+
+test('.all(tests)', function (t) {
+  t.strictEqual(detect.all('class', 'spread', 'let'), true)
   t.end()
 })
 
 test('.defaultParamValues', function (t) {
-  t.strictEqual(detect.defaultParamValues(), false)
+  t.strictEqual(detect.defaultParamValues(), true)
   t.end()
 })
 
 test('.asyncFunctions', function (t) {
-  t.strictEqual(detect.asyncFunctions(), false)
+  t.strictEqual(detect.asyncFunctions(), true)
   t.end()
 })

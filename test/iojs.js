@@ -70,3 +70,8 @@ test('.defaultParamValues', function (t) {
   t.strictEqual(detect.defaultParamValues(), false)
   t.end()
 })
+
+test('.asyncFunctions', function (t) {
+  t.strictEqual(detect.asyncFunctions(), false)
+  t.end()
+})
