@@ -155,6 +155,15 @@ exports.defaultParamValues = function () {
   return evaluates('function test (one = 1) {}')
 }
 
+/**
+ * Returns true if async functions are available.
+ *
+ * @returns {boolean}
+ */
+exports.asyncFunctions = function () {
+  return evaluates('async function test () {}')
+}
+
 function evaluates (statement) {
   try {
     eval(statement)
