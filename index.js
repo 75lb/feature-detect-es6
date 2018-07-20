@@ -2,7 +2,7 @@
 var arrayify = require('array-back')
 
 /**
- * Detect which ES2015 features are available.
+ * Detect which ES6 (ES2015 onwards) features are available.
  *
  * @module feature-detect-es6
  * @typicalname detect

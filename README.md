@@ -34,6 +34,7 @@ if (detect.all('class', 'spread', 'let', 'arrowFunction')){
     * [.destructuring()](#module_feature-detect-es6.destructuring) ⇒ <code>boolean</code>
     * [.spread()](#module_feature-detect-es6.spread) ⇒ <code>boolean</code>
     * [.defaultParamValues()](#module_feature-detect-es6.defaultParamValues) ⇒ <code>boolean</code>
+    * [.asyncFunctions()](#module_feature-detect-es6.asyncFunctions) ⇒ <code>boolean</code>
     * [.all()](#module_feature-detect-es6.all) ⇒ <code>boolean</code>
 
 <a name="module_feature-detect-es6.class"></a>
@@ -118,6 +119,12 @@ Returns true if the spread operator (`...`) is available.
 
 ### detect.defaultParamValues() ⇒ <code>boolean</code>
 Returns true if default parameter values are available.
+
+**Kind**: static method of [<code>feature-detect-es6</code>](#module_feature-detect-es6)  
+<a name="module_feature-detect-es6.asyncFunctions"></a>
+
+### detect.asyncFunctions() ⇒ <code>boolean</code>
+Returns true if async functions are available.
 
 **Kind**: static method of [<code>feature-detect-es6</code>](#module_feature-detect-es6)  
 <a name="module_feature-detect-es6.all"></a>
