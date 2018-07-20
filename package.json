@@ -2,7 +2,7 @@
   "name": "feature-detect-es6",
   "author": "Lloyd Brookes <75pound@gmail.com>",
   "version": "1.4.1",
-  "description": "Detect which ES2015 features are available.",
+  "description": "Detect which ES6 (ES2015 and above) features are available",
   "repository": "https://github.com/75lb/feature-detect-es6.git",
   "license": "MIT",
   "keywords": [
